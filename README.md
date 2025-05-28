@@ -25,5 +25,4 @@ A very basic Secure Coding Guidelines Checker that can analyze code for common s
 5. PHP: Code injection, direct superglobal usage, deprecated MySQL functions
 6. HTML: Dangerous URL schemes, inline event handlers
 
-# 
-Contributuons are welcome, This is a very basic version and should not be relied on for realtime code auditing. 
+
