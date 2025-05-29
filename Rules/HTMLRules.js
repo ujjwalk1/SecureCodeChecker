@@ -17,14 +17,14 @@ export const htmlVulnerabilityRules = [
     },
     {
         pattern: /<meta\s+http-equiv=["']Content-Security-Policy["']\s+content=["'](.*?)["']/gi,
-        severity: 'low', // Severity can be medium/high if CSP is completely missing or very weak
+        severity: 'low', 
         title: 'Missing or Weak Content Security Policy (CSP)',
         description: 'A missing or overly permissive Content Security Policy (CSP) header or meta tag fails to mitigate various attacks like XSS, clickjacking, and data injection by restricting the sources of content that a browser can load.',
         fix: 'Implement a strong CSP. Define strict `default-src`, `script-src`, `style-src`, `img-src`, `connect-src`, etc., directives to allow only trusted sources. Regularly review and refine your CSP.'
     },
     {
         pattern: /<meta\s+http-equiv=["']X-Frame-Options["']\s+content=["'](DENY|SAMEORIGIN)["']/gi,
-        severity: 'medium', // Severity can be high if X-Frame-Options is completely missing
+        severity: 'medium', 
         title: 'Missing X-Frame-Options Header/Meta Tag',
         description: 'Lack of `X-Frame-Options` header or meta tag allows your page to be embedded in an `<iframe>` on any domain, making it vulnerable to Clickjacking attacks where attackers overlay malicious content on your site.',
         fix: 'Implement `X-Frame-Options: DENY` (to prevent framing by anyone) or `X-Frame-Options: SAMEORIGIN` (to allow framing only by your own domain) in your HTTP response headers or as a meta tag.'
