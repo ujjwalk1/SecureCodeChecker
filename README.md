@@ -28,6 +28,6 @@ A very basic Secure Coding Guidelines Checker that can analyze code for common s
    
 5. PHP: Code injection, direct superglobal usage, deprecated MySQL functions (updated with LFI / RFI, Insecure Deserialization, Weak Hashing Algorithms for Passwords, Open Redirect Vulnerability, Unrestricted File Upload, Session Fixation Vulnerability, Verbose Error Reporting in Production)
     
-6. HTML: Dangerous URL schemes, inline event handlers
+6. HTML: Dangerous URL schemes, inline event handlers (updated with Missing or Weak CSP, Missing X-Frame-Options Header/Meta Tag, Insecure Autocomplete for Sensitive Input Fields, XSS via srcdoc in Iframes, Tabnabbing Vulnerability (Missing rel="noopener noreferrer"), Sensitive Information in HTML Comments, Sensitive Data in Hidden Input Fields)
 
 
