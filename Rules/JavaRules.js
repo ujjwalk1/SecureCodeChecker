@@ -1,4 +1,4 @@
-export const JavaVulnerabilityRules = [
+export const javaVulnerabilityRules = [
 
 [
     {
