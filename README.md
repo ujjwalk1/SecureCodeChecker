@@ -22,7 +22,7 @@ A very basic Secure Coding Guidelines Checker that can analyze code for common s
    
 2. Python: exec/eval injection, command injection, pickle deserialization, weak random, hardcoded secrets (updated with Directory Traversal, XXE, Unsafe Temporary File Creation, ReDoS, CORS Misconfiguration, SSRF, Weak Hashing Algorithms)
    
-3. Java: Command injection, weak algorithms (MD5/SHA1), unsafe reflection, weak random
+3. Java: Command injection, weak algorithms (MD5/SHA1), unsafe reflection, weak random (updated with Unsafe Reflection / Dynamic Class Loading, Insecure Deserialization, Path Traversal / Directory Traversal, Hardcoded Credentials, SSRF, Insecure SSL/TLS Configuration, SQL Injection via java.sql.Statement)
    
 4. SQL: SQL injection, dangerous stored procedures (updated with  SQL Injection via UNION/Type Conversion, Blind SQL Injection (Time-Based/Benchmark), Blind SQL Injection (Boolean-Based Indicators), SQL Injection in Data Modification Statements, Dangerous DDL Statements, Error-Based SQL Injection Indicators in Application Code, Oracle Specific Dangerous Packages, MySQL Specific File Operations)
    
