@@ -52,7 +52,7 @@ export const sqlVulnerabilityRules = [
     },
     {
         pattern: /(ALTER\s+TABLE|DROP\s+TABLE|CREATE\s+TABLE|TRUNCATE\s+TABLE|ALTER\s+DATABASE|DROP\s+DATABASE|CREATE\s+DATABASE)/gi,
-        severity: 'critical',
+        severity: 'high',
         title: 'Dangerous DDL Statements',
         description: 'Detects Data Definition Language (DDL) statements (`ALTER`, `DROP`, `CREATE`, `TRUNCATE` for tables or databases). If these can be injected via user input, attackers could severely damage or compromise your database schema and data.',
         fix: 'Database users should operate under the **Principle of Least Privilege**, meaning they have only the permissions absolutely necessary. Never allow user input to directly or indirectly influence DDL statements. Database schema changes should only be performed by trusted administrators.'
