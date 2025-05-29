@@ -1,6 +1,5 @@
 export const javascriptVulnerabilityRules = [
 
-[
     {
         pattern: /eval\s*\(/gi,
         severity: 'high',
@@ -78,5 +77,4 @@ export const javascriptVulnerabilityRules = [
         description: 'Sending credentials (like cookies or HTTP authentication headers) with cross-origin requests can expose them to unintended domains or make your application vulnerable to Cross-Site Request Forgery (CSRF) if the target domain is not properly secured.',
         fix: 'Only send credentials to trusted, same-origin domains. Be cautious with `xhr.withCredentials = true` or `credentials: "include"` for cross-origin requests, and ensure proper CSRF protection is in place on the server-side.'
     }
-]
 ]
