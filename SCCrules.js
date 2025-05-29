@@ -61,6 +61,8 @@ const securityRules = {
             }, 1500);
         }
 
+    window.analyzeCode = analyzeCode;
+
         function findVulnerabilities(code, language) {
             const rules = securityRules[language] || [];
             const vulnerabilities = [];
