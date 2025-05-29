@@ -5,7 +5,6 @@ import { sqlVulnerabilityRules } from './Rules/SQLRules.js';
 import { phpVulnerabilityRules } from './Rules/PHPRules.js';
 import { htmlVulnerabilityRules } from './Rules/HTMLRules.js';
 
-// Security patterns and rules
 const securityRules = {
     javascript: javascriptVulnerabilityRules,
     python: pythonVulnerabilityRules,
@@ -30,7 +29,7 @@ const securityRules = {
                 if (matches >= 2) return lang;
             }
 
-            return 'javascript'; // default
+            return 'javascript';
         }
 
         function analyzeCode() {
@@ -50,7 +49,6 @@ const securityRules = {
             results.style.display = 'none';
             btn.disabled = true;
 
-            // Simulate analysis delay
             setTimeout(() => {
                 const language = selectedLang === 'auto' ? detectLanguage(code) : selectedLang;
                 const vulnerabilities = findVulnerabilities(code, language);
@@ -89,7 +87,6 @@ const securityRules = {
             const statsContainer = document.getElementById('stats');
             const vulnContainer = document.getElementById('vulnerabilities');
 
-            // Calculate statistics
             const stats = {
                 total: vulnerabilities.length,
                 high: vulnerabilities.filter(v => v.severity === 'high').length,
@@ -97,7 +94,6 @@ const securityRules = {
                 low: vulnerabilities.filter(v => v.severity === 'low').length
             };
 
-            // Display statistics
             statsContainer.innerHTML = `
                 <div class="stat-item">
                     <div class="stat-number">${stats.total}</div>
@@ -117,7 +113,7 @@ const securityRules = {
                 </div>
             `;
 
-            // Display vulnerabilities
+
             if (vulnerabilities.length === 0) {
                 vulnContainer.innerHTML = `
                     <div class="empty-state">
@@ -151,13 +147,11 @@ const securityRules = {
             }
         }
 
-        // Add sample code button functionality
+    
         document.addEventListener('DOMContentLoaded', function() {
-            // Pre-populate with the SQL injection example
             document.getElementById('codeInput').value = `query = "SELECT * FROM products WHERE category = '" + product_category + "'"`;
             document.getElementById('languageSelect').value = 'sql';
             
-            // Add keyboard shortcut
             document.addEventListener('keydown', function(e) {
                 if (e.ctrlKey && e.key === 'Enter') {
                     analyzeCode();
