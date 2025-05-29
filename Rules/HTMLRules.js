@@ -1,6 +1,5 @@
 export const htmlVulnerabilityRules = [
 
-[
     {
         pattern: /javascript\s*:|vbscript\s*:|data\s*:/gi,
         severity: 'high',
@@ -64,5 +63,4 @@ export const htmlVulnerabilityRules = [
         description: 'Storing sensitive data (e.g., user IDs, prices, statuses) in hidden HTML input fields makes it visible to users inspecting the source code and easily modifiable by attackers, potentially leading to data manipulation.',
         fix: 'Avoid storing sensitive or critical application state data in hidden input fields. Instead, manage such data server-side using sessions, or use secure tokens/hashes to verify client-side data on the server.'
     }
-]
 ]
