@@ -1,6 +1,5 @@
 export const pythonVulnerabilityRules = [
 
-[
     {
         pattern: /exec\s*\(|eval\s*\(/gi,
         severity: 'high',
@@ -78,5 +77,4 @@ export const pythonVulnerabilityRules = [
         description: 'Using complex or inefficient regular expressions with untrusted user input can lead to catastrophic backtracking, causing the application to consume excessive CPU and become unresponsive.',
         fix: 'Avoid overly complex regex patterns. Use simpler regexes or alternative parsing methods. Consider using a regex engine that mitigates ReDoS (e.g., `re2`) if available, or set a timeout for regex operations.'
     }
-]
 ]
