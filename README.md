@@ -26,7 +26,7 @@ A very basic Secure Coding Guidelines Checker that can analyze code for common s
    
 4. SQL: SQL injection, dangerous stored procedures (updated with  SQL Injection via UNION/Type Conversion, Blind SQL Injection (Time-Based/Benchmark), Blind SQL Injection (Boolean-Based Indicators), SQL Injection in Data Modification Statements, Dangerous DDL Statements, Error-Based SQL Injection Indicators in Application Code, Oracle Specific Dangerous Packages, MySQL Specific File Operations)
    
-5. PHP: Code injection, direct superglobal usage, deprecated MySQL functions
+5. PHP: Code injection, direct superglobal usage, deprecated MySQL functions (updated with LFI / RFI, Insecure Deserialization, Weak Hashing Algorithms for Passwords, Open Redirect Vulnerability, Unrestricted File Upload, Session Fixation Vulnerability, Verbose Error Reporting in Production)
     
 6. HTML: Dangerous URL schemes, inline event handlers
 
