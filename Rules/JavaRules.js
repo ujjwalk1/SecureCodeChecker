@@ -1,6 +1,5 @@
 export const javaVulnerabilityRules = [
 
-[
     {
         pattern: /Runtime\.getRuntime\(\)\.exec|ProcessBuilder.*\.start\(\)/gi,
         severity: 'high',
@@ -71,5 +70,4 @@ export const javaVulnerabilityRules = [
         description: 'Building SQL queries by concatenating unvalidated user input directly into `java.sql.Statement` methods (like `executeQuery`, `executeUpdate`, `execute`) is a classic SQL Injection vulnerability.',
         fix: 'Always use `java.sql.PreparedStatement` with parameterized queries. Never concatenate user input directly into SQL query strings, as this is the most common way to introduce SQL injection flaws.'
     }
-]
 ]
