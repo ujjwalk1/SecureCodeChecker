@@ -24,7 +24,7 @@ A very basic Secure Coding Guidelines Checker that can analyze code for common s
    
 3. Java: Command injection, weak algorithms (MD5/SHA1), unsafe reflection, weak random
    
-4. SQL: SQL injection, dangerous stored procedures
+4. SQL: SQL injection, dangerous stored procedures (updated with  SQL Injection via UNION/Type Conversion, Blind SQL Injection (Time-Based/Benchmark), Blind SQL Injection (Boolean-Based Indicators), SQL Injection in Data Modification Statements, Dangerous DDL Statements, Error-Based SQL Injection Indicators in Application Code, Oracle Specific Dangerous Packages, MySQL Specific File Operations)
    
 5. PHP: Code injection, direct superglobal usage, deprecated MySQL functions
     
