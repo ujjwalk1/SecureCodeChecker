@@ -1,6 +1,5 @@
 export const sqlVulnerabilityRules = [
 
-[
     {
         pattern: /['"].*\+.*['"]|EXEC\s*\(|EXECUTE\s*\(/gi,
         severity: 'high',
@@ -78,5 +77,4 @@ export const sqlVulnerabilityRules = [
         description: 'Detects MySQL functions (`LOAD_FILE`, `INTO OUTFILE`, `DUMPFILE`) that can be used to read or write files on the database server, potentially leading to arbitrary file access or RCE.',
         fix: 'Ensure the MySQL user has minimal file system privileges. Avoid using these functions with user-controlled input. Configure `secure_file_priv` to a restricted directory or `NULL`.'
     }
-]
 ]
