@@ -19,7 +19,7 @@ A very basic Secure Coding Guidelines Checker that can analyze code for common s
 
 # Security Anti-Patterns Detected
 1. JavaScript: eval() usage, innerHTML XSS, document.write(), open redirects, insecure storage
-2. Python: exec/eval injection, command injection, pickle deserialization, weak random, hardcoded secrets
+2. Python: exec/eval injection, command injection, pickle deserialization, weak random, hardcoded secrets (updated with Directory Traversal, XXE, Unsafe Temporary File Creation, ReDoS, CORS Misconfiguration, SSRF, Weak Hashing Algorithms)
 3. Java: Command injection, weak algorithms (MD5/SHA1), unsafe reflection, weak random
 4. SQL: SQL injection, dangerous stored procedures
 5. PHP: Code injection, direct superglobal usage, deprecated MySQL functions
