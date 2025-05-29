@@ -1,6 +1,5 @@
 export const phpVulnerabilityRules = [
 
-[
     {
         pattern: /eval\s*\(|assert\s*\(|system\s*\(|exec\s*\(|shell_exec\s*\(|passthru\s*\(|proc_open\s*\(|popen\s*\(/gi,
         severity: 'high',
@@ -71,5 +70,4 @@ export const phpVulnerabilityRules = [
         description: 'Displaying detailed PHP error messages (`display_errors = On`, `error_reporting = E_ALL`) in a production environment can expose sensitive information about the application\'s internals, file paths, or database queries to attackers.',
         fix: 'In production, set `display_errors = Off` and `log_errors = On` in `php.ini`. Configure `error_reporting` to a less verbose level (e.g., `E_ALL & ~E_NOTICE & ~E_DEPRECATED`) and ensure errors are logged securely to a file, not displayed to users.'
     }
-]
 ]
