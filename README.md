@@ -2,6 +2,12 @@
 
 A powerful, client-side web application for identifying security vulnerabilities and anti-patterns in your code across multiple programming languages. This tool helps developers write more secure code by detecting common security issues and providing actionable remediation advice.
 
+## 🌐 Live Demo
+
+**Try it now**: [https://ujjwalk1.github.io/SecureCodeChecker/](https://ujjwalk1.github.io/SecureCodeChecker/)
+
+The application is hosted live on GitHub Pages - no installation required! Simply visit the link above to start analyzing your code for security vulnerabilities.
+
 ## ✨ Features
 
 ### Multi-Language Support
@@ -28,11 +34,20 @@ A powerful, client-side web application for identifying security vulnerabilities
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Quick Start (Recommended)
+**No setup required!** Visit the live application:
+- **Live Demo**: [https://ujjwalk1.github.io/SecureCodeChecker/](https://ujjwalk1.github.io/SecureCodeChecker/)
+- Works in any modern web browser
+- No installation or configuration needed
+- Start analyzing code immediately
+
+### Local Development Setup
+
+#### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - No server setup required - runs entirely in the browser
 
-### Installation
+#### Installation
 1. Clone the repository:
 ```bash
 git clone https://github.com/ujjwalk1/secure-coding-checker.git
@@ -55,11 +70,13 @@ php -S localhost:8000
 
 ## 🎯 Usage
 
-1. **Paste Your Code** - Copy and paste your code into the text area
-2. **Select Language** - Choose your programming language or use auto-detection
-3. **Analyze** - Click "Analyze Code Security" or press Ctrl+Enter
-4. **Review Results** - Examine the security vulnerabilities found
-5. **Apply Fixes** - Follow the provided remediation guidance
+### Online Usage (Recommended)
+1. Visit [https://ujjwalk1.github.io/SecureCodeChecker/](https://ujjwalk1.github.io/SecureCodeChecker/)
+2. **Paste Your Code** - Copy and paste your code into the text area
+3. **Select Language** - Choose your programming language or use auto-detection
+4. **Analyze** - Click "Analyze Code Security" or press Ctrl+Enter
+5. **Review Results** - Examine the security vulnerabilities found
+6. **Apply Fixes** - Follow the provided remediation guidance
 
 ### Example Analysis
 The tool will identify issues like:
@@ -90,6 +107,7 @@ secure-coding-checker/
 - **Architecture**: Modular ES6 imports for rule definitions
 - **Processing**: Client-side regex pattern matching
 - **Styling**: Custom CSS with modern design principles
+- **Hosting**: GitHub Pages for live deployment
 
 ## 🛡️ Security Rule Categories
 
@@ -279,6 +297,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## 📞 Support & Contact
 
+- 🌐 **Live Demo**: [https://ujjwalk1.github.io/SecureCodeChecker/](https://ujjwalk1.github.io/SecureCodeChecker/)
 - 🐛 **Bug Reports**: [Create an issue](https://github.com/ujjwalk1/secure-coding-checker/issues)
 - 📧 **Email**: kaulujjwal1@gmail.com
 
