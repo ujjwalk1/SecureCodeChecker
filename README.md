@@ -1,14 +1,14 @@
-# 🔒 Secure Coding Guidelines Checker
+# Secure Coding Guidelines Checker
 
 A powerful, client-side web application for identifying security vulnerabilities and anti-patterns in your code across multiple programming languages. This tool helps developers write more secure code by detecting common security issues and providing actionable remediation advice.
 
-## 🌐 Live Demo
+## Live Demo
 
 **Try it now**: [https://ujjwalk1.github.io/SecureCodeChecker/](https://ujjwalk1.github.io/SecureCodeChecker/)
 
 The application is hosted live on GitHub Pages - no installation required! Simply visit the link above to start analyzing your code for security vulnerabilities.
 
-## ✨ Features
+## Features
 
 ### Multi-Language Support
 - **JavaScript** - XSS, eval usage, DOM manipulation vulnerabilities
@@ -19,20 +19,20 @@ The application is hosted live on GitHub Pages - no installation required! Simpl
 - **HTML** - XSS vectors, CSP issues, unsafe attributes
 
 ### Security Analysis Capabilities
-- 🎯 **Pattern-Based Detection** - Uses regex patterns to identify vulnerable code constructs
-- 📊 **Risk Categorization** - Classifies vulnerabilities as High, Medium, or Low severity
-- 🔍 **Line-Level Analysis** - Pinpoints exact locations of security issues
-- 💡 **Fix Recommendations** - Provides specific remediation guidance for each vulnerability
-- 📈 **Security Statistics** - Visual dashboard showing vulnerability distribution
+-  **Pattern-Based Detection** - Uses regex patterns to identify vulnerable code constructs
+-  **Risk Categorization** - Classifies vulnerabilities as High, Medium, or Low severity
+-  **Line-Level Analysis** - Pinpoints exact locations of security issues
+-  **Fix Recommendations** - Provides specific remediation guidance for each vulnerability
+-  **Security Statistics** - Visual dashboard showing vulnerability distribution
 
 ### User Experience
-- 🚀 **Instant Analysis** - Client-side processing for fast results
-- 🎨 **Modern UI** - Clean, responsive design with gradient backgrounds
-- 🔄 **Auto-Detection** - Automatically identifies programming language
-- ⌨️ **Keyboard Shortcuts** - Ctrl+Enter to analyze code quickly
-- 📱 **Mobile Friendly** - Responsive design works on all devices
+-  **Instant Analysis** - Client-side processing for fast results
+-  **Modern UI** - Clean, responsive design with gradient backgrounds
+-  **Auto-Detection** - Automatically identifies programming language
+-  **Keyboard Shortcuts** - Ctrl+Enter to analyze code quickly
+-  **Mobile Friendly** - Responsive design works on all devices
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Quick Start (Recommended)
 **No setup required!** Visit the live application:
@@ -68,7 +68,7 @@ php -S localhost:8000
 
 3. Navigate to `http://localhost:8000` and start analyzing your code!
 
-## 🎯 Usage
+##  Usage
 
 ### Online Usage (Recommended)
 1. Visit [https://ujjwalk1.github.io/SecureCodeChecker/](https://ujjwalk1.github.io/SecureCodeChecker/)
@@ -86,7 +86,7 @@ The tool will identify issues like:
 - Hardcoded credentials in source code
 - Weak cryptographic implementations
 
-## 🔧 Architecture
+##  Architecture
 
 ### File Structure
 ```
@@ -109,7 +109,7 @@ secure-coding-checker/
 - **Styling**: Custom CSS with modern design principles
 - **Hosting**: GitHub Pages for live deployment
 
-## 🛡️ Security Rule Categories
+##  Security Rule Categories
 
 ### High Severity Issues
 - Code/Command injection vulnerabilities
@@ -131,7 +131,7 @@ secure-coding-checker/
 - Development/debugging code in production
 - Minor security anti-patterns
 
-## 🔮 Current Capabilities
+##  Current Capabilities
 
 ### Supported Vulnerability Types
 - **Injection Attacks**: SQL, NoSQL, Command, Code injection
@@ -151,7 +151,7 @@ secure-coding-checker/
 - **PHP**: Include vulnerabilities, superglobal usage
 - **HTML**: Unsafe attributes, missing CSP headers
 
-## ⚠️ Known Issues
+##  Known Issues
 
 ### Auto-Detection Limitations
 - **Language Auto-Detection is Glitchy**: The automatic language detection feature may incorrectly identify the programming language, especially for:
@@ -177,7 +177,7 @@ secure-coding-checker/
 - **Copy-Paste Formatting**: Some formatted code may lose indentation when pasted
 - **Results Overflow**: Very long vulnerability descriptions may not display properly on small screens
 
-## 🚧 Future Work & Roadmap
+##  Future Work & Roadmap
 
 ### Short-term Improvements (v2.0)
 - [ ] **Enhanced Pattern Matching**
@@ -236,7 +236,7 @@ secure-coding-checker/
   - Centralized rule updates
   - Usage analytics and insights
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Here's how you can help:
 
@@ -268,7 +268,7 @@ export const languageVulnerabilityRules = [
 4. Test thoroughly across different browsers
 5. Submit a pull request with detailed description
 
-## 📊 Statistics & Performance
+##  Statistics & Performance
 
 ### Current Rule Coverage
 - **JavaScript**: 11 vulnerability patterns
@@ -284,18 +284,18 @@ export const languageVulnerabilityRules = [
 - Memory usage: <50MB for large code files
 - Offline capability: Fully functional without internet
 
-## 📄 License
+##  License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Security patterns inspired by OWASP Top 10
 - Rule definitions based on CWE (Common Weakness Enumeration)
 - UI design influenced by modern security tools
 - Community contributions and feedback
 
-## 📞 Support & Contact
+##  Support & Contact
 
 - 🌐 **Live Demo**: [https://ujjwalk1.github.io/SecureCodeChecker/](https://ujjwalk1.github.io/SecureCodeChecker/)
 - 🐛 **Bug Reports**: [Create an issue](https://github.com/ujjwalk1/secure-coding-checker/issues)
@@ -303,6 +303,6 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ---
 
-**⚠️ Important Note**: This tool is designed to assist developers in identifying potential security issues but should not be considered a complete security audit solution. Always conduct thorough security testing and consider professional security assessments for production applications.
+** Important Note**: This tool is designed to assist developers in identifying potential security issues but should not be considered a complete security audit solution. Always conduct thorough security testing and consider professional security assessments for production applications.
 
 **🔍 Happy Secure Coding!** 🛡️
